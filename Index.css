@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    margin: 0.5rem 0;
+}
+
+.wrapper__card {
+    width: 1000px;
+    position: relative;
+    overflow: hidden;
+    cursor: grab;
+    height: 400px;
+}
+
+.cards {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(6, 300px);
+    grid-gap: 50px;
+    pointer-events: none;
+}
+
+
+.card {
+    border: 1px solid #ccc;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.card__content {
+    color: #4e4e4e;
+    padding: 1rem;
+}
